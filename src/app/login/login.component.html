@@ -1,0 +1,22 @@
+<h1>TODO: Update UI and add Login Logic</h1>
+<p>
+  Add all required logic to login. Make sure you are able to login using the API
+  (using employeeId and password)
+</p>
+<p>
+  No session or token is required to be maintained - Just a basic login logic
+</p>
+
+<div>
+  <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+    <div class="form-group">
+      <label for="employeeId">Employee ID</label>
+      <input class="form-control" #employeeId ngModel id="employeeId" name ="employeeId"/>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" #password ngModel id="password" name="password" />
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+</div>

@@ -1,0 +1,31 @@
+<h1>TODO: Add Transactions list here</h1>
+<ol>
+      <li>Create a reusable search component(use it here to serach transaction by Customer ID)<li>
+        <li>Display the search results below</li>
+
+</ol>
+<app-search  (searchcriteria)="searchThis($event)"></app-search>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Transaction Id</th>
+      <th>Customer Id</th>
+      <th>Account No</th>
+      <th>Amount</th>
+      <th>Balance</th>
+      <th>Trn Type</th>
+      <th>Debit/Credit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of transactions">
+      <td>{{transaction.transactionId}}</td>
+      <td>{{transaction.customerId}}</td>
+      <td>{{transaction.accountNo}}</td>
+      <td>{{transaction.amount}}</td>
+      <td>{{transaction.balance}}</td>
+      <td>{{transaction.transactionType}}</td>
+      <td>{{transaction.debitOrCredit}}</td>
+    </tr>
+  </tbody>
+</table>

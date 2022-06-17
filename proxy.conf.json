@@ -1,0 +1,6 @@
+{
+    "/springboot-rest-api": {
+      "target": "http://localhost:8092/springboot-rest-api",
+      "secure": false
+    }
+  }
